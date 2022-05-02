@@ -182,7 +182,7 @@ public class Limbo {
 		LIMBO_IMPLEMENTATION_VERSION = getLimboVersion();
 		console.sendMessage("Loading Limbo Version " + LIMBO_IMPLEMENTATION_VERSION + " on Minecraft " + SERVER_IMPLEMENTATION_VERSION);
 		
-		String spName = "server.properties";
+		String spName = "limbo.properties";
         File sp = new File(spName);
         if (!sp.exists()) {
         	try (InputStream in = getClass().getClassLoader().getResourceAsStream(spName)) {
